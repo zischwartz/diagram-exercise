@@ -38,9 +38,16 @@ function App({ initialElements }) {
   }, []);
 
   const onConnect = (params) => {
+    // console.log(params);
     setElements((els) => {
-      els = addEdge(params, els);
-      propagateAll(els);
+      const exists = els.find(
+        (e) => e.source === params.source && e.target === params.target
+      );
+      // only add the connection if it does not already exist
+      if (!exists) {
+        els = addEdge(params, els);
+        propagateAll(els);
+      }
       return els;
     });
   };

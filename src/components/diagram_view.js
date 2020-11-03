@@ -30,7 +30,7 @@ export function DiagramView(props) {
       nodeTypes={nodeTypes}
     >
       <Persist />
-      <Controls />
+      {/*<Controls />*/}
       <Background color="#bbb" gap={16} />
     </ReactFlow>
   );

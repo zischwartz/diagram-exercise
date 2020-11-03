@@ -56,7 +56,7 @@ export const defaultInitialElements = [
     id: "edge_a",
     source: "parent_1",
     target: "child_1",
-    animated: true,
+    // animated: true,
   },
   {
     id: "child_1",

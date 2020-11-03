@@ -1,5 +1,7 @@
 # [Diagram UI Exercise](https://zischwartz.github.io/diagram-exercise/)
 
+![screenshot](https://user-images.githubusercontent.com/77472/98008414-80ff2d80-1dc2-11eb-86af-d9a1725412df.png)
+
 ### About
 
 Given the time constraints, I opted to use the [reactflow](https://reactflow.dev) library which provides a lot of the basic display logic for flow charts, while being very extensible and expandable.
