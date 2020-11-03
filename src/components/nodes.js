@@ -32,7 +32,8 @@ export const ChildShapeNode = ({ id, data, isConnectable }) => {
       //prettier-ignore
       if (!r) { return }
       const style = {
-        backgroundColor: color_schemes[r.color][r.level],
+        backgroundColor:
+          color_schemes[r.color][r.level] || color_schemes[r.color].slice(-1),
         ...shape_lookup[key],
       };
       return (
@@ -53,7 +54,9 @@ export const ChildShapeNode = ({ id, data, isConnectable }) => {
         <div
           className="shape"
           style={{
-            backgroundColor: color_schemes[data.color][data.level],
+            backgroundColor:
+              color_schemes[data.color][data.level] ||
+              color_schemes[data.color].slice(-1),
             ...shape_lookup[data.kind],
           }}
         >
