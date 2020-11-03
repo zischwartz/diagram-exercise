@@ -6,7 +6,7 @@
 
 Given the time constraints, I opted to use the [reactflow](https://reactflow.dev) library which provides a lot of the basic display logic for flow charts, while being very extensible and expandable.
 
-I also used `jsdoc` to include some lightweight documentation directly in the code, which is available as an [html page here](https://zischwartz.github.io/diagram-exercise/docs/global.htm).
+I also used `jsdoc` to include some lightweight documentation directly in the code, which is available as an [html page here](https://zischwartz.github.io/diagram-exercise/docs/global.html).
 
 ### Development & Deployment
 
