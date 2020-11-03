@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  transition: 0.4s background-color ease;
+  /* background-color: rgb(20, 20, 20); */
+}
+
+#root.mode_add {
+  /* background-color: rgb(200, 200, 200); */
+  background-color: #f2f0f7;
+  cursor: cell;
+}
+
+nav .add_button {
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+nav .add_button span {
+  font-size: 3em;
+  color: white;
+}
+nav .add_button:hover {
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 1.1em;
+}
+
+#root.mode_add .add_button span {
+  color: #fdd0a2;
+}
+#root.mode_add .add_button {
+  background-color: #4a1486;
+}
+
+nav {
+  z-index: 10;
+  box-sizing: border-box;
+  /* transition: 0.3s ease all; */
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+}
+
+.parent_node,
+.child_node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent_node .shape {
+  padding: 35px;
+  text-align: center;
+  /* height: 50px; */
+}
+
+.parent_node input {
+  width: 50px;
+}
+
+.child_node .shape {
+  padding: 15px;
+  text-align: center;
+}
+.child_node .shape.small {
+  padding: 10px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-right: 10px;
+}
