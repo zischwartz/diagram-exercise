@@ -29,3 +29,4 @@ yarn ship
 - The way the `onChange` handler is attached to each element's `data` property is awkward, and would be worth refactoring.
 - Because I ended up using `reactflow`, which contains it's own tests, and the time constraints, I did not write tests. Had I been able to, the `propagateDown` function would be high on the list.
 - It doesn't deal with specific logic around which types of nodes can connect to which other types, currently any type is allowed to connect to any other type.
+- There's no mechanism or UI to _clear_ localStorage currently.
